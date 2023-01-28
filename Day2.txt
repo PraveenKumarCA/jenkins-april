@@ -1,0 +1,117 @@
+============================
+What is Jenkins?
+What is CI?
+Why jenkins?
+Other tools
+How jenkins works?
+Jenkins Installation config
+Terminolgy
+Basic workflow of Jenkins
+Jenkins Triggers
+============================
+
+PLAN -> CODE -> Code Review -> Build -> UT -> Packaging -> Archiving -> Dep2QA -> AT -> CodeCoverage
+-----------------------------------------------------------------------------------------------------
+JIRA -> GIT  -> Sonarqube   -> Maven -> Junit-> WAR     -> Nexus     -> Ansible -> Selenium -> Jacoco
+================================================================================================
+								jenkins
+13.232.253.176
+---------------------
+Jira
+-------------
+docker volume create --name jiraVolume
+docker run -v jiraVolume:/var/atlassian/application-data/jira --name="jira" -d -p 8080:8080 atlassian/jira-software
+
+http://13.232.253.176:8080/
+rajesh
+rajesh123
+
+Sonarqube
+--------------------------
+3.109.211.93
+http://3.109.211.93:9000/
+admin
+Admin$123
+
+Token
+4fb1fae2bb74caa731bedde698ca09022429c1b2
+
+Nexus
+-----------
+http://13.232.253.176:8081/
+docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+by docker
+admin
+admin123
+
+Jenkins
+http://3.108.52.223:8080/
+rajesh
+rajesh123
+
+Using PUTTY
+------------------------
+IP - 3.108.52.223
+User name - centos
+Password - GHSY$322
+==============================================================
+PHYSCIAL SERVERS	->	Virtual Servers		-> 	Container
+---------------------------------------------------------------
+					hypervisor				Docker	
+
+					AWS					Kubernetes							
+					GC
+					Azure
+					Vmware
+					vshp
+					
+Jira Integration with Jenkins
+================================
+https://www.devopsschool.com/blog/how-to-integration-jira-with-jenkins-as-part-of-ci-cd/
+
+Step 1 - Create a project in Jira		- DONE
+Step 2 - crate a job in Jenkins		- DONE
+Step 3 - Install Jira Plugins			[ ONE TIME ]	- DONE
+Step 4 - Config Jira Plugins			- DONE
+Step 5 - Use Jira plugins in the Job
+			- Issue Creation - error
+			- version creation - working
+=======================================================
+How to integrate Jenkins with SonarQube?
+-------------------------------------------------------
+Step 1 - Install SonarQube plugins		- ONE TIME	DONE
+Step 2 - Install SonarQube Scanner in Jenkins tool	DONE
+Step 3 - Configure SonarQube server at Jenkins		DONE
+Step 4 - Create a job
+			- RUN SCANNER OF THE SOURCE CODE
+- https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
+https://www.devopsschool.com/blog/how-to-integrate-sonarqube-with-jenkins-as-part-of-ci-cd/
+
+
+========================
+JAVA 
+	Main - Software
+	Test - testing a Software
+	-----------------------------
+		Unit	---> Result (HTML XML)
+	UI
+	X
+	Y
+https://www.devopsschool.com/blog/how-to-configure-junit-reports-at-jenkins/
+
+How to deploy a package to nexus?
+-----------------------------------
+Step 1- Install nexus plugin		DONE
+
+Step 2 - Create a repo in Nexus		DONE
+
+Step 3 Configure nexus in Jenkins
+
+Step 4 - Use nexus in jenkins job
+
+
+https://www.devopsschool.com/blog/nexus-integration-with-jenkins-to-upload-download-package/
+
+
+

@@ -1,0 +1,167 @@
+Build -> Docker image -> Registry -> Deploy to QA
+----------------------------------------------------
+Call a Builder
+
+if the file exist
+	Call a dockerfile
+Call docker push
+-----------
+Ansible
+Chef
+Puppet
+Terraform
+Kubernetes
+Docker compose
+
+GIT version control
+Repo Size - 1000MB X 50 = 5 GB
+-------------------------
+
+100 MB		- 5GB
+-----------------
+1 mins			1 hour
+==============================================================================
+Immediate Feedback
+---------------------------
+		Email
+		Chat
+		Dashboard - Pipeline
+
+Working with Distributed Jenkins
+		- Executor
+		- Concurrency
+		- Add a Linux Node & windows Node
+
+Jenkins CMD
+
+Jenkins Backup and Restore
+
+Jenkins Authentication and Authorization
+
+Top jenkins plugins
+=================================================
+
+Immediate Feedback - Email
+---------------------------
+- Install Plugins
+	- Mailer Plugin - Basic
+	- Email Extension Plugin - Advance
+- Config plugins
+- Use plugins in the job
+
+Immediate Feedback - Chat
+---------------------------
+- Install Plugins
+	- Slack
+	- Team
+	- Skype
+- Config plugins
+- Use plugins in the job
+
+Immediate Feedback - Dashboard - Pipeline - View
+---------------------------
+View
+
+Dashboard
+- Build Pipeline
+		- All the Jobs need to be linked
+
+Pipeline 
+	stage
+		step 1
+		step 2
+		step 3
+	stage
+		step 1
+		step 2
+		step 3
+	stage
+		step 1
+		step 2
+		step 3
+	stage
+		step 1
+		step 2
+		step 3
+======================================
+				DEVOPS
+- Are you CODING for the product?
+- Are you CODING for testing a product?
+- Are you CODING for infra/deploy/ci/cd/monitoring?
+	- Ansible	- roles
+	- Terraform	- tf
+	- Helm		- yaml
+	- dockerfile dockercompose	yaml
+	- jenkins - jenkinsfile	jenkinsfile
+
+
+==========================================================
+Working with Distributed Jenkins
+		- Executor	4
+
+		- Concurrency
+
+		- Add a Linux Node & windows Node
+========================X job========================
+Sridhar
+10.00  ---------------------------------------> 11 Am
+					 1 H
+
+Jami											> 11:00 -----> 12 PM
+10.10  
+
+Rajesh
+10.15															 1 PM
+=========================================================
+Adding a node or agent
+	Node _ manually
+	- linux
+		- java - ssh
+		IP - user - pass|key
+	- windows
+		- agent
+	Cloud - Auto
+	Container	
+==================================
+Job1 ---> gon 
+Job2 ---> gon
+
+
+Group of Nodes (gon)
+---------------
+Node 1 + Node 2
+
+=============================
+Jenkins Authentication and Authorization
+-------------
+Authentication - How can i login into Jenkins?
+		UserID - Password	- Store in jenkins
+		Token	- s
+		API Key
+			11c99006df281bcce0cc4956a7937bd330
+		User ID - SSH Key
+
+		LDAP
+		Active Directory
+
+		External Svc
+
+Authorization
+- After Login - What you are allowed to do??
+
+
+
+
+
+
+
+
+
+Jenkins CMD
+
+Jenkins Backup and Restore
+Jenkins Plugins
+
+
+
+

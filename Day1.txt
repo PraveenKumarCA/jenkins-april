@@ -1,0 +1,311 @@
+Start - 9:30 AM IST
+End - 5:30 PM IST
+-----------------------------
+1 - 2 = LUNCH TIME
+15 mins - 
+		11.30 PM
+		3.30 PM
+
+LAB + DEMO == AWS
+========================================
+https://www.devopsschool.com/blog/10-best-youtube-channels-for-programmers-and-devops-engineers/
+============================================================================================
+============================================================================================
+What is Jenkins?
+--------------------------
+		CI tool
+		Dev in JAVA
+		Release
+		- Community - Jenkins - Free - OpenSource - https://www.jenkins.io/
+		- Jenkins Enterprise by CloudBees - Paid - https://www.cloudbees.com/
+		- BlueOcean - Pipeline - https://www.jenkins.io/projects/blueocean/
+		- JenkinsX - Container - https://jenkins-x.io/
+
+		Powered by 1000s of plugins
+		- https://plugins.jenkins.io/
+		- plugins	- U want to EXTEND a feature of the product
+					- a Code which extend the core of the product
+		- Module 
+					- a Code which RUN on OTHERS by the product
+
+		Version
+		2.X
+		
+			
+	
+	
+What is CI?
+--------------------------
+Auto Build + Auto Testing
+--------------------------
+	IMM Feedback
+
+PHASE SDLC Cycle
+----------------------------------
+PLAN -> CODE -> Code Review -> Build -> UT -> Packaging -> Archiving -> Dep2QA -> AT -> CodeCoverage
+
+PLAN -> CODE -> Code Review -> Build -> UT -> Packaging -> Archiving -> Dep2QA -> AT -> CodeCoverage
+----------------------------------------------------------------------------------------------------
+ARCH -> DEV ----------------------------------------------------------> QA ------------------------->
+
+PLAN -> CODE -> Code Review -> Build -> UT -> Packaging -> Archiving -> Dep2QA -> AT -> CodeCoverage
+-----------------------------------------------------------------------------------------------------
+JIRA -> GIT  -> Sonarqube   -> Maven -> Junit-> WAR     -> Nexus     -> Ansible -> Selenium -> Jacoco
+
+																ALL PASS - Release
+																ONE FAILED - Repeat
+
+
+https://www.devopsschool.com/path/
+
+What do we want??
+-----------------------------
+All Automation
+NO manual work
+
+PLAN -> CODE -> Code Review -> Build -> UT -> Packaging -> Archiving -> Dep2QA -> AT -> CodeCoverage
+-----------------------------------------------------------------------------------------------------
+JIRA -> GIT  -> Sonarqube   -> Maven -> Junit-> WAR     -> Nexus     -> Ansible -> Selenium -> Jacoco
+
+========================================================================================================
+									JENKINS
+Give me a tool which would
+----------------------------------------------
+- Integ all phases of SDLC
+- Integ all Teams
+- Integ all Tools
+----------------------------
+		
+OTHERS
+-------------------------------------------------------
+Teamcity
+Bamboo
+CircleCI
+Gitlab
+AzureDevOps
+======================================================================================
+How Jenkins Works - jenkins Architecture????
+https://www.devopsschool.com/blog/jenkins-architecture-explained/
+
+HUMAN -> WEB(JENKINS)		---> STORE
+		------------
+			JAVA				XML FILE
+
+
+
+HUMAN -> JENKINS SERVER	--->	  Jenkins Node(S)
+		--- JOBS								- LINUX
+											- WIndows
+	
+===============================================================================
+How to install jenkins?
+https://www.devopsschool.com/blog/complete-tutorial-of-jenkins-installation-and-configuration/
+https://www.devopsschool.com/blog/complete-guide-of-java-installation-in-linux/
+----------------------------------------
+Demo of Centos 7
+-----------------------
+3.109.55.168
+centos
+key - rajesh-mumbai.pem
+
+ssh -i rajesh-mumbai.pem centos@3.109.55.168
+
+  5  yum install java-11-openjdk-devel
+    9  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   10  yum install wget -y
+   11  clear
+   12  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   13  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   14  yum install fontconfig java-11-openjdk
+   15  clear
+   16  yum install jenkins
+   17  clear
+   18  systemctl status jenkins
+   19  systemctl start jenkins
+   20  systemctl status jenkins
+   21  clear
+   22  systemctl stop jenkins
+   23  systemctl start jenkins
+   24  systemctl status jenkins
+
+======================================================================
+PORT - 8080
+Config file -  
+more /etc/init.d/jenkins
+JENKINS_CONFIG=/etc/sysconfig/jenkins
+
+
+Demo of Docker
+Demo of windows
+Demo of Ubuntu
+
+
+
+======================
+Terminology
+============================
+Job == Item == Project
+Agent == Node == Slave
+=============================
+Each Job Phases
+------------------------
+General
+SCM
+	git
+	svn
+Build Triggers
+	When this job can build.
+Build Env
+	- Setting up req env for this job
+Build
+	Calling Builder
+	- cmd | script
+	- shell | ps
+	- maven
+	- ant
+	- gradle
+	- msbuild
+	- sel
+	- anything of cmd or script
+Post-Build-Action
+	- send an email
+	- trigger another job
+	- chat
+	
+
+Workflow
+--------------------
+Human - Create a job 
+					Phases
+						steps
+		- run a job
+		- job would execute in Node
+		- get u the output
+======================================================================
+Jenkins Introduction		DONE
+Jenkins Basic Workflow		DONE
+Jenkins Scheduling
+Jenkins Integration
+Jenkins Notification
+Jenkins Adminis
+Jenkins Cmd/Api
+
+
+
+Jenkins Basic Workflow
+==========================================================================
+Secret Formula
+-----------------------------------------------
+What is your technology?	JAVA - NET - PYTHON - RUBY
+						WHICH VERSION?
+Where is your code?? git 
+						- which version
+						- access
+How often u want this job to be trigger?
+						- hourly - daily - n - w - m
+Which is the builder?
+					maven - gradle - shell - batch - ps - python
+					which version?
+How do you want feedback?
+				- email - chat
+
+=================================================
+https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
+
+What is your technology?	
+- Java 
+- j 11
+					
+Where is your code?? git 
+- https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+			
+How often u want this job to be trigger?
+- Hourly
+			
+Which is the builder?
+- maven
+		pom.xml (goals)
+		- compile (mvn compile)
+		- test
+		- package
+- ant	
+		build.xml (target)
+- gradle
+		build.gradle (tasks)
+
+				
+How do you want feedback?
+- email - rajesh@devopsschool.com
+			
+
+================================================================
+Jenkins Scheduling == Build Triggers
+================================================================
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
+
+
+Method 1 – AT CERTAIN TIME AKA Build periodically
+
+Method 2 – AT CERTAIN TIME BUT Build only when there is Code changes AKA Poll SCM
+
+Method 3 – Trigger using command line or script AKA Trigger builds remotely (e.g., from scripts)
+
+
+Use the following URL to trigger build remotely: JENKINS_URL/job/Rajesh/job/compile/build?token=TOKEN_NAME 
+or /buildWithParameters?token=TOKEN_NAME
+
+
+Optionally append &cause=Cause+Text to provide text that will be included in the recorded build cause.
+
+curl 
+wget
+
+curl -X POST --user rajesh:112bc27b224b9de3ff25ac7aeb4dee11a3 http://3.109.55.168:8080/job/Rajesh/job/compile/build?delay=0sec
+
+
+http://3.109.55.168:8080/github-webhook/
+
+Method 4 – Trigger this job if other job is triggerred AKA Build after other projects are built
+				job1     job2
+
+Method 5 – Trigger a job when there is PUSH into Github AKA GitHub hook trigger for GITScm polling
+
+
+  404  cd /c
+  405  clear
+  406  ls
+  407  pwd
+  408  mkdir demo-push
+  409  cd demo-push/
+  410  clear
+  411  start .
+  412  git clone https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven.git
+  413  cd helloworld-java-maven/
+  414  clear
+  415  start .
+  416  git add --all
+  417  git commit -m"adding some changes"
+  418  git push origin master
+  419  history
+
+
+Method 6 – Trigger a job when there is PUSH into Bitbucket AKA GitHub hook trigger for GITScm polling
+
+
+Method 4 – Trigger this job if other job is triggerred AKA Build after other projects are built
+Method 7 – Trigger another job after this Job AKA Post Build Action => Build Other project
+
+
+
+Method 8 – Trigger a Jenkins jobs using Jenkins command line jar file
+
+
+
+
+
+
+
+
+
+
+
